@@ -1,6 +1,6 @@
 @media screen and (max-width: 992px) {
   .region-list article{
-    min-width: 100% !important;
+    width: 100% !important;
   }
 }
 .region-list {
@@ -19,7 +19,7 @@
   border-radius: 10px;
   width: 100%;
   max-width: 290px;
-  margin: 10px;
+  margin: 10px auto;
   transition: all 0.2s;
   box-shadow: 2px 2px 6px 0px rgba(0,0,0, 0.2);
 }
