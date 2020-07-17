@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faExclamationTriangle, faCross } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faExclamationTriangle, faCross } from '@fortawesome/free-solid-svg-icons';
 
 import 'moment/locale/pt-br'
 import moment from 'moment'

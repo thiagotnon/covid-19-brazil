@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck, faHeartbeat, faCross } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck, faHeartbeat, faCross } from '@fortawesome/free-solid-svg-icons';
 import api from '../../services/api';
 import './styles.css';
 
