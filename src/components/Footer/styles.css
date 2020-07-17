@@ -1,0 +1,20 @@
+footer {
+  background-color:  rgba(0,0,0, 0.5);
+  padding: 15px;
+  color: #ffffff;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main-footer img{
+width: 15px;
+}
+#main-footer a {
+  text-decoration: none;
+  color: rgb(4, 211, 97);
+  font-weight: 600;
+}

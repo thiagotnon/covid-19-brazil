@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+body {
+  background-color: rgb(17, 17, 22);
+}
+
+.suspect small b {
+  color: rgb(253, 149, 31);
+}
+.cases small b {
+  color: rgb(4, 211, 97);
+}
+.death small b {
+  color: rgb(211, 66, 66);
+}
