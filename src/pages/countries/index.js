@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faHeartbeat, faCross } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faHeartbeat, faCross, faClock } from '@fortawesome/free-solid-svg-icons';
 import api from '../../services/api';
+import 'moment/locale/pt-br'
+import moment from 'moment'
+
 import './styles.css';
 
 
@@ -41,6 +44,9 @@ export default class Countries extends Component {
                <FontAwesomeIcon icon={faCross} /> 
             <b>Mortes</b>{state.deaths}
             </p>
+            </div>
+            <div className="data">
+              <span><FontAwesomeIcon icon={faClock} /> {moment(state.updated_at).format('llll')}</span>
             </div>
           </article>
         ))}

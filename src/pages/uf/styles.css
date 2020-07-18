@@ -13,6 +13,12 @@
     border-right: 0 !important;
     padding: 0 !important;
   }
+  .detail .box-data p {
+    background-color: transparent !important;
+  }
+  .detail .box-data p:last-child {
+    background-color: rgba(0,0,0, 0.3) !important;
+  }
 }
 .detail {
   display: flex;
@@ -38,14 +44,13 @@
 .detail .box-data h1, p  {
   color: #fff;
 }
-.detail .box-data h1 {
-  border-right: 2px solid  rgb(4, 211, 97);
-  padding: 0 30px 0 0px;
-}
+
 .detail .box-data p {
   font-size: 1.2rem;
-  padding: 0 10px ;
+  padding: 6px 15px ;
   text-align: right;
+  background-color: rgba(0,0,0, 0.3);
+  border-radius: 6px;
 }
 .detail .box-data img {
   border-radius: 10px;
@@ -60,8 +65,10 @@
   flex-flow: row wrap;
 }
 .detail .box-data p:last-child {
-  border-right: 0
+  border-right: 0;
 }
-.date small b{
+
+.date small b,
+.date svg{
   color: rgb(168, 168, 179);
 }

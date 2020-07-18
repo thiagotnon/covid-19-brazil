@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faExclamationTriangle, faCross } from '@fortawesome/free-solid-svg-icons';
-
+import { faCheck, faExclamationTriangle, faCross, faClock } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+
+import 'moment/locale/pt-br'
+import moment from 'moment'
 
 import api from '../../services/api';
 import './styles.css';
@@ -50,6 +52,9 @@ export default class Main extends Component {
                 </p>
             </div>
            </Link>
+           <div className="data">
+              <span><FontAwesomeIcon icon={faClock} /> {moment(region.datetime).format('llll')}</span>
+            </div>
           </article>    
         ))
         }

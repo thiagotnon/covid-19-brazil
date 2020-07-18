@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import api from '../../services/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faExclamationTriangle, faCross } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faExclamationTriangle, faCross, faClock } from '@fortawesome/free-solid-svg-icons';
 
 import 'moment/locale/pt-br'
 import moment from 'moment'
@@ -37,7 +37,7 @@ export default class UF extends Component {
           <p className="death"><small>
           <FontAwesomeIcon icon={faCross} /> 
           <b> Mortes</b> </small><br />{region.deaths}</p>
-          <p className="date"><small><b>Atualizado em</b> </small><br />{moment(region.data).format('llll')}</p>
+          <p className="date"><FontAwesomeIcon icon={faClock} /> <small><b>Atualizado em</b> </small><br />{moment(region.data).format('llll')}</p>
         </div>
       </div>
     );
