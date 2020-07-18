@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe, faMap } from '@fortawesome/free-solid-svg-icons'
 
@@ -9,10 +10,10 @@ import flag from '../../assets/img/flag.png'
 const Header = () => (
   <header id="main-header">
     <div className="container">
-    <h1><a href="/"><img className="flag" src={flag} alt=""/> <span>Covid-19 Brasil</span></a></h1>  
+    <h1><img className="flag" src={flag} alt=""/> <span>Covid-19 Brasil</span></h1>  
    <div className="box-nav">
-      <a className="nav" href={'/'}> <FontAwesomeIcon icon={faMap} />  <span>Todos os Estados</span></a>
-      <a className="nav" href={'/countries'}> <FontAwesomeIcon icon={faGlobe} /> <span>Países</span></a>
+      <Link className="nav" to={'/'}> <FontAwesomeIcon icon={faMap} />  <span>Todos os Estados</span></Link>
+      <Link className="nav" to={'/countries'}> <FontAwesomeIcon icon={faGlobe} /> <span>Países</span></Link>
    </div>
     </div>
 
