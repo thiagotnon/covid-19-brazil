@@ -1,3 +1,4 @@
+![Screenshot da aplicação](https://raw.githubusercontent.com/thiagotnon/covid-19-brazil/master/src/assets/img/screenshot.png)
 # COVID-19 Brasil Web App
 
 Projeto desenvolvido durante estudos de Front-end utilizando ReactJS.
