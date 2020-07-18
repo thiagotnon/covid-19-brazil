@@ -32,14 +32,16 @@ header img.flag {
 } 
 header a.nav {
   text-decoration: none;
-  color: #fff;
-  background-color: rgb(4, 211, 97);
-  padding: 10px ;
-  border-radius: 10px;
-  transition: all 0.2s;
+  background-color: rgb(17, 17, 22);
+  color: rgb(4, 211, 97);
+  padding: 8px 15px ;
+  border-radius: 100px;
+  transition: all 0.5s;
 }
 header a.nav:hover {
-  opacity: 0.5;
+
+  color: rgb(17, 17, 22, 0.5);
+  background-color: rgb(4, 211, 97);
 }
 .container {
   display: flex;
@@ -49,6 +51,12 @@ header a.nav:hover {
   max-width: 1280px;
   margin: auto;
 }
+
 header .box-nav  a{
   margin-left: 10px;
+}
+header .git {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
 }
